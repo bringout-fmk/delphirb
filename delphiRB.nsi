@@ -17,26 +17,26 @@ ShowInstDetails show
 SetOverwrite on
 
 ; The file to write
-OutFile "p:\zipsig\winfmk\delphiRB.exe"
+OutFile "z:\fmk\delphiRB.exe"
 
 ; The default installation directory
 InstallDir c:\sigma
 InstallDirRegKey HKLM SOFTWARE\sigma-com\util ""
 
 ; The text to prompt the user to enter a directory
-DirText "Instalacija DelphiRB 01.32 na vas racunar. Odaberite direktorij"
+DirText "Instalacija DelphiRB 01.33 na vas racunar. Odaberite direktorij"
 
 
 Section "DLL (required)"
   SectionIn 1
   SetOutPath $SYSDIR
   SetOverwrite on
-  File "c:windows\system32\ace32.dll"
-  File "c:windows\system32\adsloc32.dll"
-  File "c:windows\system32\adslocal.cfg"
-  File "c:windows\system32\axcws32.dll"
-  File "c:windows\system32\extend.chr"
-  File "c:windows\system32\ansi.chr"
+  File "c:\windows\system32\ace32.dll"
+  File "c:\windows\system32\adsloc32.dll"
+  File "c:\windows\system32\adslocal.cfg"
+  File "c:\windows\system32\axcws32.dll"
+  File "c:\windows\system32\extend.chr"
+  File "c:\windows\system32\ansi.chr"
 SectionEnd
 
 
