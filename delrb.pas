@@ -119,12 +119,9 @@ var Ini: TIniFile;
 begin
 
   Args:=TArgumenti.Create;
-  lsReportFile:='FINXY.rtm';
+  lsReportFile:='FIN50.rtm';
   ExeIni:=TIniFile.Create(ExtractFilePath(Application.ExeName)+'fmk.ini');
   cKonverzija:=ExeIni.ReadString('DelphiRB','Konverzija','');
-
-
-
 
   {get app directory }
   FDirPath := ExtractFilePath(ParamStr(0));
@@ -204,9 +201,6 @@ begin
   ppReport.OnPreviewFormClose:=ppReportAfterPrint;
   FillRichTextIzIni;
 
-
-
-
   ppReport.DataPipeline:=pipe;
 
   {note: just use 'PrintToDevices' to print to a custom viewer}
@@ -224,7 +218,9 @@ end;  {procedure, FormCreate}
 procedure TfrmLabel.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
   //Action := caFree;
-
+   ExeIni.WriteString('DelphiRB','Aktivan','0');
+   ExeIni.Free;
+   Application.Terminate;
 end; {procedure, FormClose}
 
 
@@ -265,16 +261,11 @@ begin
 
   Ini:=TIniFile.Create(ExtractFilePath(Application.ExeName)+'proizvj.ini');
 
-
-
   //AttrPos := rt.FindText('#%',0,300,[]);
-
-
 
   nBandova:=ppReport.BandCount;
 
   for i0:=0 to ppReport.BandCount-1 do begin;
-
 
   nObjekata:=ppReport.Bands[i0].ObjectCount;
 
@@ -353,10 +344,6 @@ begin
    end; // i0
 
   end;
-
-
-
-
 
 
 end;
@@ -458,20 +445,17 @@ end;
 
 procedure TfrmLabel.ppReportPrintDialogClose(Sender: TObject);
 begin
+
    Application.Terminate;
 end;
 
 procedure TfrmLabel.ppReportAfterPrint(Sender: TObject);
 begin
+
    Application.Terminate;
 end;
 
-
-
-
-
 function TfrmLabel.KonvertDbPath(cPath: String): String;
-
 var
         Ini: TIniFile;
         IniPriv: TIniFile;
@@ -481,7 +465,6 @@ var
         cNetBiosP: String;
         cNetBiosH: String;
         cUserName: String;
-
 
 begin
 
