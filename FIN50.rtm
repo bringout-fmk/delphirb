@@ -1,0 +1,310 @@
+object ppReport: TppReport
+  AutoStop = False
+  DataPipeline = ppReportPipeline
+  PrinterSetup.BinName = 'Default'
+  PrinterSetup.DocumentName = 'ppReport1'
+  PrinterSetup.PaperName = 'A4'
+  PrinterSetup.PrinterName = 'Default'
+  PrinterSetup.mmMarginBottom = 0
+  PrinterSetup.mmMarginLeft = 0
+  PrinterSetup.mmMarginRight = 0
+  PrinterSetup.mmMarginTop = 3000
+  PrinterSetup.mmPaperHeight = 297000
+  PrinterSetup.mmPaperWidth = 210000
+  Template.FileName = 'T:\sigma\FIN50.rtm'
+  Template.Format = ftASCII
+  Units = utMillimeters
+  UserName = 'Report'
+  AfterPrint = ppReportPreviewFormClose
+  DeviceType = 'Screen'
+  OnCancel = ppReportPreviewFormClose
+  OnPreviewFormClose = ppReportPreviewFormClose
+  Left = 4
+  Top = 5
+  Version = '5.0'
+  mmColumnWidth = 297000
+  object ppHeaderBand1: TppHeaderBand
+    mmBottomOffset = 0
+    mmHeight = 41804
+    mmPrintPosition = 0
+    object ppRichText1: TppRichText
+      UserName = 'RichText1'
+      Caption = 'RichText1'
+      RichText = 
+        '{\rtf1\ansi\ansicpg1250\deff0\deflang1050{\fonttbl{\f0\fswiss\fc' +
+        'harset238 SC Tahoma;}{\f1\fswiss\fcharset238 MS Shell Dlg;}{\f2\' +
+        'fnil MS Sans Serif;}}'#13#10'\viewkind4\uc1\pard\qc\b\f0\fs24  LOCAL I' +
+        'NTIATIVES PROJECT - FEDERATION  \b0\fs22\par'#13#10'\b\fs24 Bilans sta' +
+        'nja (#0VALUTA#)\b0\fs22\par'#13#10'za period od  #DatumOd# do #DatumDo' +
+        '#\f1\fs16\par'#13#10'\pard\par'#13#10'\f2\par'#13#10'}'#13#10
+      mmHeight = 21696
+      mmLeft = 14023
+      mmTop = 6615
+      mmWidth = 176742
+      BandType = 0
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+    end
+    object ppImage1: TppImage
+      UserName = 'Image1'
+      MaintainAspectRatio = False
+      ShiftWithParent = True
+      Stretch = True
+      Picture.Data = {
+        09544D65746166696C6544090000010000005800000000000000080000001C03
+        00000503000000000000000000004C0D0000EE0A000020454D46000001004009
+        0000310000000400000000000000000000000000000040120000601A0000C500
+        00001D0100000A00000010000000000000000000000009000000100000002403
+        000095020000120000000C00000001000000520000004C010000010000009CFF
+        FFFF000000000000000000000000900100000000000004400012540069006D00
+        6500730020004E0065007700200052006F006D0061006E000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000EF1A0000000000000000000000000000000000000000000444020E055403
+        C6060F4E1E51FF05000000000A000100010000000000B8010F4E000000000000
+        0000000000000000000000000000000000000101010101010101010100002500
+        00000C00000001000000540000005400000000000000940200002C0000000503
+        00000100000077EE864077EE86400000000094020000010000004C0000000400
+        00000000000000000000240300009502000050000000200000002D0000002100
+        0000080000001E00000018000000000000000000000024030000940200001100
+        00000C000000080000000B0000001000000024030000940200000C0000001000
+        000000000000000000000A000000100000000000000000000000090000001000
+        00000100000001000000110000000C000000080000000A000000100000000000
+        00000000000009000000100000000100000001000000110000000C0000000800
+        0000110000000C000000080000000A0000001000000000000000000000000900
+        00001000000001000000010000000900000010000000920100004A0100000A00
+        0000100000000000000000000000260000001C00000002000000050000000000
+        000000000000FFFFFF00250000000C00000002000000250000000C0000000400
+        008056000000080100000800000008000000600100006C0100003B0000006B00
+        0400360078003600790035007A0035007B0035007C0035007D0036007E003600
+        7F003600800037008000370081003800810038008200390082003A0083003B00
+        83003C0083003C0084003D0084003E008400B0008400A100A5008600B6007A00
+        A5001500A5001400A5001300A5001200A5001100A4001000A4000F00A4000E00
+        A3000D00A3000D00A2000C00A2000B00A1000A00A1000900A00009009F000800
+        9E0007009D0007009C0006009B0005009A000500990005009800040097000400
+        96000400950004009300040092000500900005008F0006008D0006008C004500
+        0500500015006B000400250000000C0000000200000027000000180000000300
+        000000000000CCCCCC0000000000250000000C00000003000000560000003C00
+        0000620000006C010000340100008C02000008000000670024019A00B6007F00
+        C7007400B60031004601580046017200340167002401250000000C0000000000
+        0080280000000C00000003000000250000000C00000002000000250000000C00
+        0000040000805600000094010000D00000004A0100001C0300008A0200005E00
+        0000310145013F01450140014501410145014201450143014501440145014501
+        44014601440147014401470143014801430149014301490142014A0142014B01
+        41014C0140014D013F014D013E014E013E014E013D014F013D014F013C014F01
+        3B018E01B6008201A5006701B6003A0118011301B6000801A500EC00B600BC00
+        1F01BB002001BB002101BA002101BA002201B9002201B9002301B8002301B700
+        2301B7002401B6002401B5002401B4002401770024018200340168004501C500
+        4501C6004501C7004501C8004501C9004501CA004501CA004401CB004401CC00
+        4401CD004401CD004301CE004301CF004201D0004201D0004101D1004101D100
+        4001D2004001D2003F01D3003F01D3003E01D4003D01D5003C01D5003B01FE00
+        E20021013B0122013C0122013D0123013E0124013F0124014001250140012501
+        41012601410126014201270142012801430129014301290144012A0144012B01
+        44012C0145012D0145012E0145012F0145013001450131014501250000000C00
+        000002000000250000000C0000000400008056000000E40100001E0100002A00
+        0000A60200004A010000720000001F019B0052012D0052012C0053012B005301
+        2900530128005301270053012600530124005301230053012200530121005201
+        200052011F0051011E0051011D0050011C004F011B004E011A004D0119004C01
+        18004B0118004A01170049011700480116004701160046011600450115004401
+        15004301150042011500C8001500C7001500C6001500C5001500C4001600C300
+        1600C2001600C1001700C0001700BF001800BE001800BE001900BD001900BC00
+        1A00BC001B00BB001B00BA001C00BA001D00B9001D00B9001E00B9001F00B800
+        1F008F007900B5007900D2003B00D2003A00D3003A00D3003900D4003900D400
+        3800D5003800D5003700D6003700D7003700D8003700D8003600D90036001B01
+        36001C0137001D0137001E0137001F0138002001380020013900210139002101
+        3A0022013B0022013C0022013D0023013E0023013F0022014000220141002201
+        420006017F0005017F0005018000040180000401810003018200020182000201
+        83000101830000018300FF008400FE008400BD008400AE00A500F400A5000F01
+        94001901A2001A01A2001A01A1001B01A1001B01A0001C01A0001C019F001D01
+        9F001D019E001E019E001E019D001F019C001F019B00250000000C0000000700
+        0080280000000C000000020000004B0000004000000030000000050000002000
+        0000010000000100000010000000000000000000000024030000940200000000
+        0000000000002403000094020000300000000C0000000F000080250000000C00
+        000007000080250000000C00000000000080250000000C000000010000002200
+        00000C000000FFFFFFFF0C0000001000000000000000000000000E0000001400
+        0000000000001000000014000000}
+      mmHeight = 23548
+      mmLeft = 166159
+      mmTop = 5027
+      mmWidth = 25665
+      BandType = 0
+    end
+    object ppShape3: TppShape
+      UserName = 'Shape3'
+      Brush.Color = clSilver
+      mmHeight = 7938
+      mmLeft = 13494
+      mmTop = 32279
+      mmWidth = 138642
+      BandType = 0
+    end
+    object ppShape4: TppShape
+      UserName = 'Shape4'
+      Brush.Color = clSilver
+      mmHeight = 7938
+      mmLeft = 151871
+      mmTop = 32279
+      mmWidth = 38629
+      BandType = 0
+    end
+    object ppLabel1: TppLabel
+      UserName = 'Label1'
+      Alignment = taCenter
+      Caption = 'Iznos'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'SC Tahoma'
+      Font.Size = 12
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 5027
+      mmLeft = 165629
+      mmTop = 34131
+      mmWidth = 11377
+      BandType = 0
+    end
+    object ppLabel2: TppLabel
+      UserName = 'Label2'
+      Alignment = taCenter
+      Caption = 'Pozicija'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'SC Tahoma'
+      Font.Size = 12
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 5027
+      mmLeft = 79640
+      mmTop = 33602
+      mmWidth = 16140
+      BandType = 0
+    end
+  end
+  object ppDetailBand1: TppDetailBand
+    BeforePrint = ppDetailBandBeforePrintSetColors
+    mmBottomOffset = 0
+    mmHeight = 5821
+    mmPrintPosition = 0
+    object ppShape2: TppShape
+      Tag = 10
+      UserName = 'Shape2'
+      Pen.Color = clSilver
+      mmHeight = 5821
+      mmLeft = 151871
+      mmTop = 0
+      mmWidth = 38629
+      BandType = 4
+    end
+    object ppShape1: TppShape
+      Tag = 10
+      UserName = 'Shape1'
+      Pen.Color = clSilver
+      mmHeight = 5821
+      mmLeft = 13494
+      mmTop = 0
+      mmWidth = 138377
+      BandType = 4
+    end
+    object ppDBText1: TppDBText
+      Tag = 10
+      OnPrint = ppDBTextPrintK1
+      UserName = 'DBText1'
+      Color = clBlack
+      DataField = 'IMEKONTA'
+      DataPipeline = ppReportPipeline
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Arial'
+      Font.Size = 10
+      Font.Style = []
+      Transparent = True
+      mmHeight = 4763
+      mmLeft = 14288
+      mmTop = 529
+      mmWidth = 135732
+      BandType = 4
+    end
+    object ppDBText2: TppDBText
+      OnPrint = ppDBTextPrintK1
+      UserName = 'DBText2'
+      Alignment = taRightJustify
+      Color = clNone
+      DataField = 'TEKSUMA'
+      DataPipeline = ppReportPipeline
+      DisplayFormat = '#,0.00;-#,0.00'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Arial'
+      Font.Size = 10
+      Font.Style = []
+      Transparent = True
+      mmHeight = 4763
+      mmLeft = 153459
+      mmTop = 529
+      mmWidth = 34660
+      BandType = 4
+    end
+  end
+  object ppFooterBand1: TppFooterBand
+    mmBottomOffset = 0
+    mmHeight = 15610
+    mmPrintPosition = 0
+    object ppSystemVariable1: TppSystemVariable
+      UserName = 'SystemVariable1'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'SC Tahoma'
+      Font.Size = 8
+      Font.Style = [fsItalic]
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 39688
+      mmTop = 1852
+      mmWidth = 11113
+      BandType = 8
+    end
+    object ppLabel3: TppLabel
+      UserName = 'Label3'
+      Caption = 'Datum stampanja:'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'SC Tahoma'
+      Font.Size = 8
+      Font.Style = [fsItalic]
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 13758
+      mmTop = 1852
+      mmWidth = 23813
+      BandType = 8
+    end
+    object ppSystemVariable2: TppSystemVariable
+      UserName = 'SystemVariable2'
+      VarType = vtPageNo
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'SC Tahoma'
+      Font.Size = 8
+      Font.Style = [fsItalic]
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 104775
+      mmTop = 2381
+      mmWidth = 1588
+      BandType = 8
+    end
+    object ppLine1: TppLine
+      UserName = 'Line1'
+      Weight = 0.75
+      mmHeight = 3969
+      mmLeft = 13758
+      mmTop = 794
+      mmWidth = 178330
+      BandType = 8
+    end
+  end
+end
