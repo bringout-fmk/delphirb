@@ -2,8 +2,6 @@
 ;
 ; This script attempts to test most of the functionality of NSIS.
 ;
-; 
-;
 ; This script is perhaps one of the simplest NSIs you can make. All of the
 ; optional settings are left to their default settings. The instalelr simply 
 ; prompts the user asking them where to install, and drops of notepad.exe
@@ -61,7 +59,7 @@ SectionEnd
 
 Function .onInstSuccess
   MessageBox MB_ICONQUESTION \
-             "Setup je zavrsen ..." 
+             "Instalacija uspjesno zavrsena" 
 
 FunctionEnd
 
